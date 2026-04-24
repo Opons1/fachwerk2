@@ -224,6 +224,487 @@ minetest.register_craft({
 	output = "fachwerk2:window2",
 	recipe = {{"fachwerk2:window1","dye:white"}}
 })
-
 -- remove unused
 minetest.unregister_item("fachwerk2:40")
+
+--siver sandstone
+local sss = "default:silver_sandstone"
+local ss = "default:silver_sand"
+local stick = "default:stick"
+local fss = "fachwerk2:10"
+core.register_craft({
+	output = "fachwerk2:10 3",
+	recipe = {
+		{sss, ss},
+		{ss, sss},	
+	}
+})
+core.register_craft({
+	output = "fachwerk2:11",
+	recipe = {
+		{"", stick, ""},
+		{"", fss,   ""},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:12",
+	recipe = {
+		{"", "", ""},
+		{stick, fss,   ""},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:13",
+	recipe = {
+		{"", "", ""},
+		{"", fss, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:14",
+	recipe = {
+		{"", stick, ""},
+		{"", fss, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:15",
+	recipe = {
+		{"", "", ""},
+		{stick, fss, stick},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:16",
+	recipe = {
+		{"", stick, ""},
+		{stick, fss, ""},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:17",
+	recipe = {
+		{"", stick, ""},
+		{stick, fss, stick},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:18",
+	recipe = {
+		{"", "", ""},
+		{stick, fss, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:19",
+	recipe = {
+		{"", stick, ""},
+		{stick, fss, stick},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:1A",
+	recipe = {
+		{stick, "", ""},
+		{"", fss, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:1B",
+	recipe = {
+		{"", stick, ""},
+		{"", fss, ""},
+		{"", "", stick},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:1C",
+	recipe = {
+		{"", "", ""},
+		{"", fss, stick},
+		{stick, "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:1D",
+	recipe = {
+		{"", "", stick},
+		{stick, fss, ""},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:1E",
+	recipe = {
+		{stick, "", stick},
+		{"", fss, ""},
+		{stick, "", stick},
+	}
+})
+local dss = "default:desert_sandstone"
+local ds = "default:desert_sand"
+local fds = "fachwerk2:20"
+core.register_craft({
+	output = "fachwerk2:20 3",
+	recipe = {
+		{dss, ds},
+		{ds, dss},	
+	}
+})
+core.register_craft({
+	output = "fachwerk2:21",
+	recipe = {
+		{"", stick, ""},
+		{"", fds,   ""},
+		{"", "", ""},
+		}
+})
+core.register_craft({
+	output = "fachwerk2:22",
+	recipe = {
+		{"", "", ""},
+		{stick, fds,   ""},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:23",
+	recipe = {
+		{"", "", ""},
+		{"", fds, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:24",
+	recipe = {
+		{"", stick, ""},
+		{"", fds, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:25",
+	recipe = {
+		{"", "", ""},
+		{stick, fds, stick},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:26",
+	recipe = {
+		{"", stick, ""},
+		{stick, fds, ""},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:27",
+	recipe = {
+		{"", stick, ""},
+		{stick, fds, stick},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:28",
+	recipe = {
+		{"", "", ""},
+		{stick, fds, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:29",
+	recipe = {
+		{"", stick, ""},
+		{stick, fds, stick},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:2A",
+	recipe = {
+		{stick, "", ""},
+		{"", fds, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:2B",
+	recipe = {
+		{"", stick, ""},
+		{"", fds, ""},
+		{"", "", stick},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:2C",
+	recipe = {
+		{"", "", ""},
+		{"", fds, stick},
+		{stick, "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:2D",
+	recipe = {
+		{"", "", stick},
+		{stick, fds, ""},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:2E",
+	recipe = {
+		{stick, "", stick},
+		{"", fds, ""},
+		{stick, "", stick},
+	}
+})
+local desertstone = "default:desert_stone"
+local desertcobble = "default:desert_cobble"
+local fds = "fachwerk2:30"
+core.register_craft({
+	output = "fachwerk2:30 3",
+	recipe = {
+		{desertstone, desertcobble},
+		{desertcobble, desertstone},	
+	}
+})
+core.register_craft({
+	output = "fachwerk2:31",
+	recipe = {
+		{"", stick, ""},
+		{"", fds,   ""},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:32",
+	recipe = {
+		{"", "", ""},
+		{stick, fds,   ""},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:33",
+	recipe = {
+		{"", "", ""},
+		{"", fds, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:34",
+	recipe = {
+		{"", stick, ""},
+		{"", fds, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:35",
+	recipe = {
+		{"", "", ""},
+		{stick, fds, stick},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:36",
+	recipe = {
+		{"", stick, ""},
+		{stick, fds, ""},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:37",
+	recipe = {
+		{"", stick, ""},
+		{stick, fds, stick},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:38",
+	recipe = {
+		{"", "", ""},
+		{stick, fds, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:39",
+	recipe = {
+		{"", stick, ""},
+		{stick, fds, stick},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:3A",
+	recipe = {
+		{stick, "", ""},
+		{"", fds, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:3B",
+	recipe = {
+		{"", stick, ""},
+		{"", fds, ""},
+		{"", "", stick},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:3C",
+	recipe = {
+		{"", "", ""},
+		{"", fds, stick},
+		{stick, "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:3D",
+	recipe = {
+		{"", "", stick},
+		{stick, fds, ""},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:3E",
+	recipe = {
+		{stick, "", stick},
+		{"", fds, ""},
+		{stick, "", stick},
+	}
+})
+local brick = "fachwerk2:B"
+core.register_craft({
+	output = "fachwerk2:41",
+	recipe = {
+		{"", stick, ""},
+		{"", brick, ""},
+		{"", "", ""},
+	}
+})
+core.register_craft{
+	output = "fachwerk2:42",
+	recipe = {
+		{"", "", ""},
+		{stick, brick, ""},
+		{"", "", ""},
+	}
+}
+core.register_craft{
+	output = "fachwerk2:43",
+	recipe = {
+		{"", "", ""},
+		{"", brick, ""},
+		{"", stick, ""},
+	}
+}
+core.register_craft{
+	output = "fachwerk2:44",
+	recipe = {
+		{"", stick, ""},
+		{"", brick, ""},
+		{"", stick, ""},
+	}
+}
+core.register_craft{
+	output = "fachwerk2:45",
+	recipe = {
+		{"", "", ""},
+		{stick, brick, stick},
+		{"", "", ""},
+	}
+}
+core.register_craft{
+	output = "fachwerk2:46",
+	recipe = {
+		{"", stick, ""},
+		{stick, brick, ""},
+		{"", "", ""},
+	}
+}
+core.register_craft{
+	output = "fachwerk2:47",
+	recipe = {
+		{"", stick, ""},
+		{stick, brick, stick},
+		{"", stick, ""},
+	}
+}
+core.register_craft({
+	output = "fachwerk2:48",
+	recipe = {
+		{"", "", ""},
+		{stick, brick, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:49",
+	recipe = {
+		{"", stick, ""},
+		{stick, brick, stick},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:4A",
+	recipe = {
+		{stick, "", ""},
+		{"", brick, ""},
+		{"", stick, ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:4B",
+	recipe = {
+		{"", stick, ""},
+		{"", brick, ""},
+		{"", "", stick},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:4C",
+	recipe = {
+		{"", "", ""},
+		{"", brick, stick},
+		{stick, "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:4D",
+	recipe = {
+		{"", "", stick},
+		{stick, brick, ""},
+		{"", "", ""},
+	}
+})
+core.register_craft({
+	output = "fachwerk2:4E",
+	recipe = {
+		{stick, "", stick},
+		{"", brick, ""},
+		{stick, "", stick},
+	}
+})
